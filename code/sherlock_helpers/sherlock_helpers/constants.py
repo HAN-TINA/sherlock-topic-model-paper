@@ -14,7 +14,7 @@ FIG_DIR = Path('/mnt/paper/figs')
 VIDEO_WSIZE = 50
 
 # recall sliding window length (in sentences)
-RECALL_WSIZE = 10
+RECALL_WSIZE = 1
 
 # text vectorizer parameters
 VECTORIZER_PARAMS = {

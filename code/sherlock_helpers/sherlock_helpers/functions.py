@@ -66,7 +66,7 @@ def parse_windows(textlist, wsize):
 ########################################
 
 def get_recall_text(onset, offset, subid):
-    transcript_path = RAW_DIR.joinpath(f'NN{subid} transcript.txt')
+    transcript_path = RAW_DIR.joinpath(f'{subid}_transcript.txt')
     with transcript_path.open(encoding='cp1252') as f:
         transcript = f.read().replace(b'\x92'.decode('cp1252'), "'").strip()
 
